@@ -12,3 +12,13 @@ def calcular_subtotal(self):
     """
     subtotal = quantidade*preco_unitario
     return subtotal
+
+def calcular_desconto(self, subtotal, cupom):
+    """
+    Recebe cupom já padronizado e retorna o valor número do desconto.
+    """
+    if cupom == "sim":
+      desconto = subtotal * 0.10
+    else:
+      desconto = 0
+    return desconto
