@@ -22,3 +22,15 @@ def calcular_desconto(self, subtotal, cupom):
     else:
       desconto = 0
     return desconto
+
+def classificar_pedido(self, subtotal):
+    """
+    Retorna uma das três classificações da página anterior.
+    """
+    if subtotal <= 30:
+      classificação_do_pedido = "Pedido Pequeno"
+    elif 30 < subtotal <= 100:
+      classificação_do_pedido = "Pedido médio"
+    else:
+      classificação_do_pedido = "Pedido Grande"
+    return classificação_do_pedido
